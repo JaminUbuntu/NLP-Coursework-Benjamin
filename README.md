@@ -1,11 +1,6 @@
 # 💬 Semantic Analysis on Twitter User Data using Hybrid Embedding Models  
 *A Traditional Machine Learning Approach for Sentiment Classification*
 
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)  
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
-![Platform: Google Colab](https://img.shields.io/badge/platform-Colab-green.svg)  
-![Status: Academic](https://img.shields.io/badge/status-submitted-blue)
-
 ---
 
 ## 🔍 Overview
