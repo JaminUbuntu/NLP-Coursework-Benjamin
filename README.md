@@ -68,7 +68,7 @@ The final models have relevance in real-world applications such as **brand monit
 
 ---
 
-## 📊 Key Insights & Results
+## 📊 Key Results
 
 | Model             | TF-IDF | Word2Vec | Hybrid |
 |------------------|--------|----------|--------|
@@ -89,59 +89,13 @@ The final models have relevance in real-world applications such as **brand monit
 
 ---
 
-## 🔗 How to Leverage This Repository
+## 🔧 Environment and Setup Instructions
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/JaminUbuntu/NLP-Coursework-Benjamin.git
-   cd NLP-Coursework-Benjamin
-   pip install -r requirements.txt
-   ```
-
-2. Explore the main notebook: `NLP_Coursework_Benjamin.ipynb`
-3. Examine hybrid embeddings and comparative model evaluations.
-4. Use the codebase as a blueprint for NLP classification projects.
-
----
-
-## 🧭 Future Directions
-
-- Incorporate **SHAP** or **LIME** for Explainability
-- Test **Skip-gram Word2Vec** with TF-IDF in Hybrid architecture
-- Explore **Deep Learning alternatives** (BERT, LSTM)
-
----
-
-## 📚 Citation
-
-If you use this work for Research or Academic Purposes, please cite:
-> Ibok, B. (2025). *Semantic Analysis on Twitter User Data using the Hybrid Embedding Model: A Traditional Machine Learning Approach*. Coventry University.
-
----
-
-## 🎓 Academic Context
-
-This project supports CW1 for **Module 7120CEM – Natural Language Processing** at **Coventry University**. It demonstrates core competencies in:
-- Linguistic Feature Engineering
-- Classical Model Design & Analysis
-- Experimental Evaluation & Ethics in NLP
-
----
-
-## 📬 Contact
-
-**Author:** Benjamin Ibok  
-**Institution:** Coventry University  
-**Email:** ibokb@coventry.ac.uk  
-**Personal Email:** benjaminsibok@gmail.com
-
----
-
-## ⚙️ Environment Setup
-
-To set up the environment locally:
+To set up the project locally:
 
 ```bash
+git clone https://github.com/JaminUbuntu/NLP-Coursework-Benjamin.git
+cd NLP-Coursework-Benjamin
 pip install -r requirements.txt
 ```
 
@@ -151,18 +105,33 @@ pip install -r requirements.txt
 
 ```
 NLP-Coursework-Benjamin/
-├── data/
-├── models/
-├── outputs/
-├── utils/
-├── notebooks/
+├── data/                 # Cleaned dataset
+├── models/               # Trained models (joblib)
+├── outputs/              # Visualizations (ROC, Confusion Matrices)
+├── utils/                # Preprocessing scripts
+├── notebooks/            # Jupyter notebooks
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 📊 Visualizations & Model Evaluation
+## 🧾 Licensing
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+---
+
+## 🔍 Model Interpretability Tools
+
+- Confusion Matrix
+- ROC-AUC Curve
+- Word Importance (TF-IDF)
+- Feature Influence via SHAP (planned)
+
+---
+
+## 🖼️ Sample Output & Screenshots
 
 | Word Cloud (Cleaned) | ROC Curve (Hybrid) |
 |----------------------|--------------------|
@@ -170,16 +139,9 @@ NLP-Coursework-Benjamin/
 
 ---
 
-## 🤝 Contribution Guidelines
-
-1. Fork this repository
-2. Create a feature branch
-3. Submit a Pull Request with clear descriptions
-4. Follow [PEP8](https://peps.python.org/pep-0008/) coding conventions
-
----
-
 ## 💾 Model Inference
+
+To reuse trained models:
 
 ```python
 from joblib import load
@@ -189,7 +151,28 @@ prediction = model.predict(new_data)
 
 ---
 
-## 🏷️ Project Badges
+## 🧪 Contribution Guidelines
+
+1. Fork this repository.
+2. Create a branch: `git checkout -b feature-branch`
+3. Commit your work: `git commit -m 'Add something cool'`
+4. Push and create a Pull Request.
+
+Adhere to [PEP8](https://peps.python.org/pep-0008/) and document all modules.
+
+---
+
+## 🎓 Academic Context
+
+This repository supports the CW1 submission for **Module 7120CEM – Natural Language Processing** at **Coventry University**. It reflects core NLP competencies including:
+- Linguistic Processing
+- Machine Learning Implementation
+- Dataset Design & Evaluation
+- Ethical Research Practice
+
+---
+
+## 🏅 Badges
 
 ![Colab Ready](https://img.shields.io/badge/Notebook-Colab%20Compatible-brightgreen)
 ![TF-IDF + Word2Vec](https://img.shields.io/badge/Hybrid-TF--IDF%2BWord2Vec-blue)
@@ -200,12 +183,12 @@ prediction = model.predict(new_data)
 ## ❓ FAQ / Known Issues
 
 - **Q: Why does Word2Vec underperform on its own?**  
-  A: It requires larger corpora to capture rich semantic patterns.
+  A: It requires larger training corpora to capture rich semantics effectively.
 
-- **Q: Can this scale to multilingual datasets?**  
-  A: Yes, with pre-trained multilingual embeddings and adapted preprocessing.
+- **Q: Can this scale to multilingual tweets?**  
+  A: Yes, with multilingual Word2Vec models and Unicode-aware preprocessing.
 
-- **Q: Why focus on Traditional ML instead of Deep Learning?**  
-  A: For interpretability, computational efficiency, and educational clarity.
+- **Q: Why use Traditional ML and not Deep Learning?**  
+  A: To explore interpretable and lightweight models as a baseline.
 
 ---
