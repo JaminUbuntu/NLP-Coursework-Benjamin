@@ -1,4 +1,4 @@
-7120CEM - Natural Language Processing
+7120CEM - Natural Language Processing (Part 1)
 
 # 💬 Semantic Analysis on Twitter User Data using Hybrid Embedding Models  
 *A Traditional Machine Learning Approach for Sentiment Classification*
